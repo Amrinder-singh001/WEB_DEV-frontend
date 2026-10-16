@@ -1,0 +1,43 @@
+/* DAY 1 Learing l, background, rgb, hexadecimal, text align properties */
+h1{
+    color: red;
+    background-color: black;
+    /* different-different color system */
+    color: rgb(255, 0, 0);
+    color: rgb(0, 255, 0);
+    color: rgb(0, 0, 255);
+    color: rgb(255, 0, 255);
+    color: rgb(255, 255, 0);
+    color: rgb(0, 255, 255);
+    color: #ffffff;
+    color: #ff0000;
+    color: #00ff00;
+    color: #0000ff;
+    color: #fff;
+    color: #f00;
+    color: #0f0;
+    color: #00f;
+    color: antiquewhite;
+  }
+
+  p{
+    color: grey;
+    background-color: white;
+    
+    /* text align properties */
+    text-align: center;         /* text ko center side shift kar dega */
+    text-align: left;           /* text ko left side shift kar dega */
+    text-align: right;          /* text ko right side shift kar dega */
+    text-align: start;          /* text ko left side shift kar dega */
+    text-align: end;            /* text ko right side shift kar dega */
+    text-align: justify;       /* left and right side ke text ko baraber krke center mei spaces bda dega */
+  }
+
+  button{
+    color:  aquamarine;
+    background-color: darkred;
+  }
+
+
+ 
+  
