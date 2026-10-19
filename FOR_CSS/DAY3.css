@@ -1,0 +1,147 @@
+/* Universal selector property : Apply to the all element of the extire code*/
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Element selector property : Apply to the single element*/
+h1{
+    color: #b92b27;
+}
+
+h3{
+    color: chocolate;
+}
+
+/* We can select multiple element selector to give same property*/
+h1 , h3{
+    font-family: 'Times New Roman';
+}
+
+/* Id selector property : to gave design through Id of their tag*/
+/* used by # sign */
+#login{
+    background-color: #fff;
+}
+
+#login:hover{
+    background-color :burlywood;
+    color: green;
+}
+
+#signup{
+    background-color: #b92b27;
+    color: #fff;
+}
+
+/* Class selector property : to gave design through class using inside their tag*/
+/* used by . sign */
+
+.Input{
+    background-color: lightblue;
+    color: blue;
+}
+
+.btn {
+    background-color: green;
+    color: aliceblue;
+}
+
+/* Decendant selector property : to gave design through used by hirerarchy inside their tag*/
+/* used by .post class ke andar sabhi anchors tags ko*/
+.post a{
+    color: cornflowerblue;
+}
+
+.un-or a{
+    color: purple;
+}
+
+nav ul li {
+    color: mediumspringgreen;
+}
+
+/* Sibling combinator property */
+/* paragraph tag ke neeche jitne ni h3 ho un par property apply karo  */
+p + h3 {
+    text-decoration: purple underline;
+}
+
+.btn + button {
+    background-color: blanchedalmond;
+}
+
+/* Child combinator property */
+div > input{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Attribute Selector property */
+input[type = "text"]{
+    background-color: lightcyan;
+}
+
+input[type = "password"]{
+    background-color: lightpink;
+}
+
+/* input[type]{
+    background-color: lightpink;
+}
+ */
+
+ /* Pseudo class Selector property */
+ /* :hover -> Hover krne ke bad action ya property perform hogi */
+ h3:hover{
+    text-decoration: overline;
+}
+/* :active -> click krne ke bad action ya property perform hogi */
+h3:active{   
+    background-color: wheat;
+}
+
+p:active{
+    font-weight: bolder;
+    color: red;
+}
+/* :checked selector property */
+input[type = "radio"]:checked + label{
+    font-weight: bolder;
+    color: red;
+}
+
+/* :nth-of-type() selector property : sirf ()ke upar hi property apply hogi */
+.post:nth-of-type(2){
+    background-color: aquamarine;
+}
+
+.post:nth-of-type(2n){
+    background-color: aquamarine;
+}
+
+h1::first-letter{
+    color: blue;
+    background-color: chartreuse;
+}
+
+/* h1::first-line selector property*/
+h1::first-line{
+    color: cadetblue;
+}
+
+p::selection{
+    background-color: lightgreen;
+}
+
+h3::selection{
+    background-color: lightgreen;
+}
+
+/* css property : same element ke liye jo property sabse last mei add hogi vo hi apply hogi */
+h1{
+    text-transform : uppercase;
+}
+
+h1{
+    text-transform : lowercase;
+}
